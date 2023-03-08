@@ -1,6 +1,6 @@
 {
   "name": "telegraf-autoquote",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Plugin to Make Your Bot Auto Quote Every Message=",
   "main": "src/index.js",
   "scripts": {
