@@ -18,6 +18,17 @@ import autoQuote from "telegraf-autoquote"
 
 bot.use(autoQuote())
 ```
+
+### Advanced Installation
+If you want the bot to do autoquote in a particular filter like `message("photo")` or in any other filter. You can do it by doing :
+```TS (Node)
+import autoQuote from "telegraf-autoquote"
+import { message } from "telegraf/filters"
+
+bot.on("photo",autoQuote()); // old style
+bot.on(message("photo"),autoQuote()); // recommended
+```
+
 ### Help
 You can open a **Issue** for ressolving your problem
 
