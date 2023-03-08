@@ -1,43 +1,23 @@
 # Telegraf Fsub
-This plugin can help you to force your bot users to subscribe your channel before using the bot.
+This plugin can help you to make your bot reply to every message.
 
 ### Installation
-You can install this plugin any Telegraf Bot.
+You can install this plugin in any Telegraf Bot.
 
 Install the NPM Plugin
 ```bash
-npm i telegraf-fsub
+npm i telegraf-autoquote
 #or
-yarn add telegraf-fsub
+yarn add telegraf-autoquote
 ```
 
 Import and Use in code
 
 ```TS (Node)
-import fsub from "telegraf-fsub"
+import autoQuote from "telegraf-autoquote"
 
-const botFsub = fsub({ 
-    channels : ["@channel"]
-});
-bot.use(botFsub)
+bot.use(autoQuote())
 ```
-
-### Advanced Installation
-You can pass these options in bot like this
-```TS (Node)
-import fsub from "telegraf-fsub"
-
-const botFsub = fsub({ 
-    channels: [],
-    notJoinedMessage: "Hello {user}, You Must Joined <b>{channel}</b>",
-    enable_inline: true,
-    parse_mode: "HTML"
-});
-bot.use(botFsub)
-```
-
-**Note** : channels option is required without that bot will crash
-
 ### Help
 You can open a **Issue** for ressolving your problem
 
