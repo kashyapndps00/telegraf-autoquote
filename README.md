@@ -1,4 +1,4 @@
-# Telegraf Fsub
+# Telegraf AutoQuote
 This plugin can help you to make your bot reply to every message.
 
 ### Installation
